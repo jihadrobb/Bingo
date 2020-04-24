@@ -34,17 +34,19 @@ function gameStatus() {
             return 'B I N';
         case 4:
             return 'B I N G';
-        case 5:
-            return 'B I N G O';
+        case 0:
+            return '';
         default:
-            return;
+            return 'B I N G O ! \n Congratulations, You Win!';
     }
 }
 
 //klik salah satu nomor di box (kasih highlight)
 function boxCLicked(index) {
+    var status = document.querySelector(".game-status");
     indexFilled[index] = 1;
     document.getElementById(index).style.background = 'lightblue';
+    status.innerHTML = gameStatus();
 }
 //cek sudah berapa baris yang didapat
 function checkLine(indexFilled) {
@@ -87,7 +89,7 @@ function checkLine(indexFilled) {
     }
     return lineCollected;
 }
-
+//program utama
 gameBoard = fillGameBoard(gameBoard);
 for (let i = 0; i < gameBoard.length; i++) {
     document.getElementById(i).innerHTML = gameBoard[i];
