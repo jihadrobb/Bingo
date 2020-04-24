@@ -42,10 +42,9 @@ function gameStatus() {
 }
 
 //klik salah satu nomor di box (kasih highlight)
-function boxCLicked(index, indexFilled) {
+function boxCLicked(index) {
     indexFilled[index] = 1;
-    document.getElementById(index.toString()).style.background = blue;
-    return indexFilled;
+    document.getElementById(index).style.background = 'lightblue';
 }
 //cek sudah berapa baris yang didapat
 function checkLine(indexFilled) {
@@ -92,5 +91,5 @@ function checkLine(indexFilled) {
 gameBoard = fillGameBoard(gameBoard);
 for (let i = 0; i < gameBoard.length; i++) {
     document.getElementById(i).innerHTML = gameBoard[i];
+    document.getElementById(i).onclick = function() {boxCLicked(i)};
 }
-console.log(gameBoard)
