@@ -22,6 +22,7 @@ function fillGameBoard(gameBoard) {
     }
     return gameBoard;
 }
+//untuk mengetahui status game
 function gameStatus() {
     var lineCollected = checkLine(indexFilled);
     switch (lineCollected) {
