@@ -22,16 +22,14 @@ function fillGameBoard(gameBoard) {
     }
     return gameBoard;
 }
-
+//klik salah satu nomor di box (kasih highlight)
 function boxCLicked(index, indexFilled) {
     indexFilled[index] = 1;
     return indexFilled;
 }
-
-var lineCollected = 0;
-
+//cek sudah berapa baris yang didapat
 function checkLine(indexFilled) {
-    lineCollected = 0;
+    var lineCollected = 0;
     if(indexFilled[0] === 1 && indexFilled[1] === 1 && indexFilled[2] === 1 && indexFilled[3] === 1 && indexFilled[4] === 1) {//baris pertama
         lineCollected++;
     }
