@@ -22,6 +22,24 @@ function fillGameBoard(gameBoard) {
     }
     return gameBoard;
 }
+function gameStatus() {
+    var lineCollected = checkLine(indexFilled);
+    switch (lineCollected) {
+        case 1:
+            return 'B';
+        case 2:
+            return 'B I';
+        case 3:
+            return 'B I N';
+        case 4:
+            return 'B I N G';
+        case 5:
+            return 'B I N G O';
+        default:
+            return;
+    }
+}
+
 //klik salah satu nomor di box (kasih highlight)
 function boxCLicked(index, indexFilled) {
     indexFilled[index] = 1;
