@@ -68,4 +68,3 @@ function checkLine(indexFilled) {
     }
     return lineCollected;
 }
-console.log(checkLine(indexFilled))
