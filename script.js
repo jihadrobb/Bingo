@@ -88,3 +88,9 @@ function checkLine(indexFilled) {
     }
     return lineCollected;
 }
+
+gameBoard = fillGameBoard(gameBoard);
+for (let i = 0; i < gameBoard.length; i++) {
+    document.getElementById(i).innerHTML = gameBoard[i];
+}
+console.log(gameBoard)
