@@ -25,6 +25,7 @@ function fillGameBoard(gameBoard) {
 //klik salah satu nomor di box (kasih highlight)
 function boxCLicked(index, indexFilled) {
     indexFilled[index] = 1;
+    document.getElementById(index.toString()).style.background = blue;
     return indexFilled;
 }
 //cek sudah berapa baris yang didapat
