@@ -7,5 +7,4 @@ Cara bermain:
   4. Pilihlah angka yg akan membantumu membentuk garis, baik horizontal, vertikal, maupun diagonal.
   5. Pemenangnya adalah yang tercepat membentuk 5 garis dan berteriak "Bingo!" sekaligus mengakhiri permainan.
 
-Have fun playing an old simple game :)
 Link to play https://jihadrobb.github.io/Bingo/
